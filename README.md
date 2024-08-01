@@ -37,6 +37,3 @@ For Example:
 ```Bash
 CUDA_VISIBLE_DEVICES=0 bash scripts/coop_idapl/eval.sh stanford_cars vit_b16_ep50_ctxv1 16 16 0.1 5.0
 ```
-# Citation
-If you use this code in your research, please kindly cite the following papers
-【缺引用】
