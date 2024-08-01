@@ -25,7 +25,7 @@ bash scripts/coop_idapl/main.sh ${DATSET_NAME} ${CFG} ${SHOTS} ${N_CTX} ${ASSOCI
 ```
 For Example:
 ```Bash
-bash scripts/coop_idapl/main.sh standford_cars vit_b16_ep50_ctxv1 16 16 True 0.1 0.5
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop_idapl/main.sh stanford_cars vit_b16_ep50_ctxv1 16 16 True 0.1 0.5
 ```
 ## How to test!
 When you migrate to a novel class, please set ASSOCIATIVE_LEARNING False, and the learnable vectors are only used for the base class!
@@ -35,7 +35,7 @@ bash scripts/coop_idapl/eval.sh ${DATSET_NAME} ${CFG} ${SHOTS} ${N_CTX} ${ASSOCI
 This means that when you load the model of the previous run example, you do not use the learnable vectors of categories
 For Example:
 ```Bash
-bash scripts/coop_idapl/eval.sh standford_cars vit_b16_ep50_ctxv1 16 16 False 0.1 0.5
+CUDA_VISIBLE_DEVICES=0 bash scripts/coop_idapl/eval.sh stanford_cars vit_b16_ep50_ctxv1 16 16 False 0.1 0.5
 ```
 # Citation
 If you use this code in your research, please kindly cite the following papers
