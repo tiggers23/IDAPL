@@ -20,7 +20,7 @@ SCORE_LC=$6
 #SCORE_CLF=5.0
 SCORE_CLF=$7
 LDEP=50
-SUB=new
+SUB=$8
 
 for SEED in 1 2 3
 do
